@@ -1,0 +1,114 @@
+# ==========================================
+# Decentralized Edge-Interlocking - .gitignore
+# ==========================================
+
+# --- PlatformIO & Embedded Toolchains ---
+.pio/
+.pioenvs/
+.piolibdeps/
+.clang_complete
+compile_commands.json
+*.bin
+*.elf
+*.hex
+*.map
+*.o
+*.a
+*.so
+*.d
+*.srec
+
+# --- ESP-IDF Build Artifacts ---
+sdkconfig
+sdkconfig.old
+dependencies.lock
+managed_components/
+
+# --- Python & ML Environments ---
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+ENV/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.ipynb_checkpoints/
+
+# --- Machine Learning Models & Weights ---
+# Trained model checkpoints and exported weights are tracked externally / releases
+*.tflite
+*.onnx
+*.pt
+*.pth
+*.h5
+*.hdf5
+*.ckpt
+*.weights
+*.pkl
+*.joblib
+
+# --- Datasets & Media Files ---
+# Prevent accidental commits of large audio, vibration, and video datasets
+datasets/*
+!datasets/.gitkeep
+*.wav
+*.mp3
+*.flac
+*.raw
+*.pcm
+*.jpg
+*.jpeg
+*.png
+*.bmp
+*.mp4
+*.avi
+*.mkv
+*.bag
+*.pcap
+
+# --- Test Outputs & Diagnostics ---
+*.log
+tests/logs/*
+!tests/logs/.gitkeep
+tests/benchmarks/*
+!tests/benchmarks/.gitkeep
+
+# --- IDEs & OS Metadata ---
+.DS_Store
+Thumbs.db
+Desktop.ini
+.idea/
+*.swp
+*.swo
+*~
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# --- Security & Secrets ---
+.env
+.env.*
+*.pem
+*.key
+*.crt
+*.pfx
+secrets/
+/references
